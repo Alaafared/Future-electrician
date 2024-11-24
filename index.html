@@ -43,8 +43,8 @@
                 <hr class="divider">
         
                 <div class="units-container">
-                    <button class="unit-button" onclick="showPage('q1-1')">وحدة أجهزة القياس</button>
-                    <button class="unit-button" onclick="showPage('q1-2')">وحدة مكونات الدوائر الكهربية</button>
+                    <button class="unit-button" onclick="showPage('q1-1')">وحدة مكونات الدوائر الكهربية</button>
+                    <button class="unit-button" onclick="showPage('q1-2')">وحدة أجهزة القياس</button>
                     <button class="unit-button" onclick="showPage('q1-3')">وحدة اساسيات الورشة</button>
                     <button class="unit-button" onclick="showPage('q1-4')">وحدة الرسم الفني</button>
                     <button class="unit-button" onclick="showPage('q1-5')">وحدة الدوائر الالكترونية</button>
@@ -57,11 +57,10 @@
         
         
 
-        <!-- الوحدة الأولى الصف الأول -->
 <!-- الوحدة الأولى الصف الأول -->
 <div id="q1-1" style="display: none;">
     <div class="question-container">
-        <h2 class="custom-title">وحدة أجهزة القياس</h2>
+        <h2 class="custom-title">وحدة مكونات الدوائر الكهربية</h2>
         <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
         <hr class="custom-divider">
 
@@ -79,32 +78,446 @@
         <div id="result" class="custom-result" style="display: none;"></div>
     </div>
 </div>
+<!-- الوحدة الثانية الصف الأول -->
+<div id="q1-2" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">وحدة أجهزة القياس الكهربية</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
 
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
 
+            <div class="button-container">
+                <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button>
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-1')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة الثالثة الصف الأول -->
+<div id="q1-3" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">وحدة أجهزة أساسيات الورشة الكهربية</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-1')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة الرابعة الصف الأول -->
+<div id="q1-4" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">وحدة الرسم الفني</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-1')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة الخامسة الصف الأول -->
+<div id="q1-5" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">وحدة مكونات الدوائر الالكترونية</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-1')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة السادسة الصف الأول -->
+<div id="q1-6" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">وحدة دائرة كهربية بسيطة</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-1')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
 
         <!-- الصف الثاني -->
-        <div id="grade-2" style="display: none;">
-            <h2>اختر الوحدة للصف الثاني:</h2>
-            <a href="#q2-1" class="btn">1</a>
-            <a href="#q2-2" class="btn">2</a>
-            <a href="#q2-3" class="btn">3</a>
-            <a href="#q2-4" class="btn">4</a>
-            <a href="#q2-5" class="btn">5</a>
-            <div><a href="#level-selection" class="btn" onclick="showPage('level-selection')">عودة</a></div>
 
+        <div id="grade-2" style="display: none;">
+            <div class="grade-container">
+                <h2 class="page-title">اختر الوحدة الدراسية</h2>
+                <p class="page-subtitle">يرجى اختيار الوحدة للبدء في الاختبار</p>
+                <hr class="divider">
+        
+                <div class="units-container">
+                    <button class="unit-button" onclick="showPage('q2-1')">الوحدة 1 </button>
+                    <button class="unit-button" onclick="showPage('q2-2')">الوحدة 2</button>
+                    <button class="unit-button" onclick="showPage('q2-3')">الوحدة 3</button>
+                    <button class="unit-button" onclick="showPage('q2-4')">الوحدة 4</button>
+                    <button class="unit-button" onclick="showPage('q2-5')">الوحدة 5</button>
+                    <button class="unit-button" onclick="showPage('q2-6')">الوحدة 6</button>
+                    <button class="unit-button" onclick="showPage('q2-6')">الوحدة 7</button>
+
+                </div>
+        
+                <button class="back-button" onclick="showPage('level-selection')">رجوع</button>
+            </div>
         </div>
+        
+<!-- الوحدة الأولى الصف الثاني -->
+<div id="q2-1" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">1</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-2')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة الثانية الصف الثاني -->
+<div id="q2-2" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">2</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-2')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة الثالثة الصف الثاني -->
+<div id="q2-3" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">3</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-2')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة الرابعة الصف الثالث -->
+<div id="q2-4" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">4</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-2')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة الخامسة الصف الثاني -->
+<div id="q2-5" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">5</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-2')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة السادسة الصف الأول -->
+<div id="q2-6" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">6</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-2')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة السابعة الصف الأول -->
+<div id="q2-7" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">6</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-2')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
 
         <!-- الصف الثالث -->
         <div id="grade-3" style="display: none;">
-            <h2>اختر الوحدة للصف الثالث:</h2>
-            <a href="#q3-1" class="btn">1</a>
-            <a href="#q3-2" class="btn">2</a>
-            <a href="#q3-3" class="btn">3</a>
-            <a href="#q3-4" class="btn">4</a>
-            <a href="#q3-5" class="btn">5</a>
-            <div><a href="#level-selection" class="btn" onclick="showPage('level-selection')">عودة</a></div>
+            <div class="grade-container">
+                <h2 class="page-title">اختر الوحدة الدراسية</h2>
+                <p class="page-subtitle">يرجى اختيار الوحدة للبدء في الاختبار</p>
+                <hr class="divider">
+        
+                <div class="units-container">
+                    <button class="unit-button" onclick="showPage('q3-1')">الوحدة 1</button>
+                    <button class="unit-button" onclick="showPage('q3-2')">الوحدة 2</button>
+                    <button class="unit-button" onclick="showPage('q3-3')">الوحدة 3</button>
+                    <button class="unit-button" onclick="showPage('q3-4')">الوحدة 4</button>
+                    <button class="unit-button" onclick="showPage('q3-5')">الوحدة 5</button>
+                    <button class="unit-button" onclick="showPage('q3-6')">الوحدة 6</button>
 
+                </div>
+        
+                <button class="back-button" onclick="showPage('level-selection')">رجوع</button>
+            </div>
         </div>
+              
+<!-- الوحدة الأولى الصف الثالث -->
+<div id="q3-1" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">1</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-3')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة الثانية الصف الثالث -->
+<div id="q3-2" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">2</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-3')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة الثالثة الصف الثالث -->
+<div id="q3-3" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">3</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-3')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة الرابعة الصف الثالث -->
+<div id="q3-4" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">4</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-3')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة الخامسة الصف الثالث -->
+<div id="q3-5" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">5</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-3')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
+<!-- الوحدة السادسة الصف الثالث -->
+<div id="q3-6" style="display: none;">
+    <div class="question-container">
+        <h2 class="custom-title">6</h2>
+        <h2 class="custom-title">ما زال قيد التطوير</h2>
+        <p class="custom-subtitle">اختر الإجابة الصحيحة لكل سؤال</p>
+        <hr class="custom-divider">
+
+        <div id="quiz-container">
+            <div id="question-text" class="custom-question"></div>
+            <div id="answers" class="custom-answers"></div>
+
+            <div class="button-container">
+                <!-- <button id="next-btn" onclick="nextQuestion()" class="custom-button">التالي</button> -->
+                <button id="submit-btn" onclick="submitQuiz()" class="custom-button" style="display: none;">إرسال</button>
+                <button onclick="showPage('grade-3')" class="custom-back-button">عودة</button>
+            </div>
+        </div>
+
+        <div id="result" class="custom-result" style="display: none;"></div>
+    </div>
+</div>
     </div>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
